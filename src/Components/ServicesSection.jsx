@@ -365,7 +365,7 @@ export default function ServicesSection() {
         </div>
 
         {/* Stats Section */}
-        <motion.div
+        {/* <motion.div
           initial={{
             opacity: 0,
             y: 50,
@@ -415,7 +415,7 @@ export default function ServicesSection() {
               Client Satisfaction
             </p>
           </div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );
