@@ -145,14 +145,14 @@ export default function FooterSection() {
 
             <div className="space-y-4 text-gray-400">
               <p>
-                Lagos, Nigeria
+                Imo, Nigeria
                 <br />
                 Industrial & Commercial Metal Solutions
               </p>
 
-              <p>+234 800 000 0000</p>
+              <p>+234 811009433</p>
 
-              <p>info@tripplemetals.com</p>
+              <p>michealkinggodwin@gmail.com</p>
 
               <p>Mon - Sat: 8:00 AM - 6:00 PM</p>
             </div>

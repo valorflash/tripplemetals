@@ -6,11 +6,11 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 const NAV_ITEMS = [
   { label: "Home", href: "#hero" },
   { label: "About", href: "#about" },
-  { label: "Services", href: "#services" },
+  { label: "Services", href: "/services", route: true },
   { label: "Projects", href: "/projects", route: true },
   { label: "Testimonials", href: "#testimonials" },
   { label: "FAQ", href: "#faq" },
-  { label: "Contact", href: "#contact" },
+  { label: "Contact", href: "/contact", route: true },
 ];
 
 export default function Navbar() {

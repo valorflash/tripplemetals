@@ -7,24 +7,25 @@ import {
   Send,
 } from "lucide-react";
 import { toast } from "sonner";
+import { Link } from "react-router-dom";
 
 const contactInfo = [
   {
     icon: Phone,
     label: "Phone",
-    value: "+234 XXX XXX XXXX",
+    value: "+234 8110094343",
     sub: "Mon - Sat | 8AM - 6PM",
   },
   {
     icon: Mail,
     label: "Email",
-    value: "info@tripplemetals.com",
+    value: "michealkinggodwin@gmail.com",
     sub: "Response within 24 hours",
   },
   {
     icon: MapPin,
     label: "Location",
-    value: "Lagos, Nigeria",
+    value: "Imo, Nigeria",
     sub: "Serving clients nationwide",
   },
   {

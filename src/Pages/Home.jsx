@@ -8,6 +8,7 @@ import TestimonialsSection from '../Components/TestimonialsSection';
 import FAQSection from '../Components/FAQSection';
 import ContactSection from '../Components/ContactSection';
 import FooterSection from '../Components/FooterSection';
+import ProjectSlider from "../Components/ProjectSlider";
 import FloatingCTA from '../Components/FloatingCTA';
 
 export default function Home() {
@@ -15,12 +16,13 @@ export default function Home() {
     <div className="min-h-screen bg-background text-foreground">
       <Navbar />
       <HeroSection />
+      <ProjectSlider />
       <AboutSection />
-      <ServicesSection />
+      {/* <ServicesSection /> */}
       <WhyChooseUs />
       <TestimonialsSection />
       <FAQSection />
-      <ContactSection />
+      {/* <ContactSection /> */}
       <FooterSection />
       <FloatingCTA />
     </div>
