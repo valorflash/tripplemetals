@@ -7,7 +7,7 @@ import {
   Construction,
 } from "lucide-react";
 
-import welderImage from "../assets/welder.jpg";
+import welderImage from "../assets/welder.png";
 
 import metalImg from "../assets/metal.jpg";
 import industrialImg from "../assets/industrial.jpg";

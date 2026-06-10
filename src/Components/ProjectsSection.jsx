@@ -25,7 +25,7 @@ import tank2 from "../assets/tank-2.jpg";
 import tank3 from "../assets/tank-3.jpg";
 import tank4 from "../assets/tank-4.jpg";
 
-import welder from "../assets/welder.jpg";
+import welder from "../assets/welder.png";
 import welder2 from "../assets/welder-2.jpg";
 
 import protector from "../assets/protector-img.jpg";
