@@ -179,9 +179,9 @@ export default function HeroSection() {
                 transition={{ delay: 0.4 }}
                 className="flex flex-col sm:flex-row gap-5 mt-10"
               >
-                <button
-                  onClick={() => scrollTo("contact")}
-                  className="
+               <Link
+                to="/contact"
+                className="
                     group
                     flex
                     items-center
@@ -198,19 +198,19 @@ export default function HeroSection() {
                     transition-all
                     duration-300
                     shadow-[0_0_35px_rgba(249,115,22,0.4)]
-                  "
+                "
                 >
-                  Get a Quote
+                Get a Quote
 
-                  <ArrowRight
+                <ArrowRight
                     className="
-                      w-5
-                      h-5
-                      transition-transform
-                      group-hover:translate-x-2
+                    w-5
+                    h-5
+                    transition-transform
+                    group-hover:translate-x-2
                     "
-                  />
-                </button>
+                />
+                </Link>
 
                 <Link
                   to="/projects"
