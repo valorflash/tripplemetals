@@ -146,25 +146,27 @@ export default function FAQSection() {
           </p>
 
           <a
-            href="#contact"
+            href="https://wa.me/2348110094343?text=Hello%20TrippleMetals,%20I%20would%20like%20to%20make%20an%20enquiry."
+            target="_blank"
+            rel="noopener noreferrer"
             className="
-              inline-flex
-              items-center
-              justify-center
-              px-8
-              py-4
-              rounded-xl
-              bg-orange-500
-              text-white
-              font-semibold
-              transition-all
-              duration-300
-              hover:bg-orange-600
-              hover:scale-105
+                inline-flex
+                items-center
+                justify-center
+                px-8
+                py-4
+                rounded-xl
+                bg-orange-500
+                text-white
+                font-semibold
+                transition-all
+                duration-300
+                hover:bg-orange-600
+                hover:scale-105
             "
-          >
+            >
             Contact Us
-          </a>
+            </a>
         </div>
       </div>
     </section>

@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowLeft, ExternalLink } from "lucide-react";
-import { Link } from "react-router-dom";
+import { ExternalLink } from "lucide-react";
 
 // IMAGES
 import gate1 from "../assets/gate-1.jpg";
@@ -189,7 +188,9 @@ export default function ProjectsPage() {
   const filtered =
     active === "All"
       ? projects
-      : projects.filter((item) => item.category === active);
+      : projects.filter(
+          (item) => item.category === active
+        );
 
   return (
     <div className="min-h-screen bg-black text-white overflow-hidden">
@@ -200,14 +201,6 @@ export default function ProjectsPage() {
       {/* HERO */}
       <section className="relative pt-40 pb-24">
         <div className="max-w-7xl mx-auto px-6">
-          {/* <Link
-            to="/"
-            className="inline-flex items-center gap-2 text-orange-500 hover:text-orange-400 transition mb-8"
-          >
-            <ArrowLeft size={18} />
-            Back Home
-          </Link> */}
-
           <motion.h1
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
@@ -223,11 +216,11 @@ export default function ProjectsPage() {
             transition={{ delay: 0.3 }}
             className="max-w-3xl mt-6 text-xl text-gray-400"
           >
-            Explore our completed welding, fabrication, structural,
-            railing, gate, tank, and custom steel projects.
+            Explore our completed welding, fabrication,
+            structural, railing, gate, tank, and custom
+            steel projects.
           </motion.p>
 
-          {/* Stats */}
           <div className="grid grid-cols-3 gap-6 mt-16 max-w-3xl">
             <div>
               <h3 className="text-4xl font-black text-orange-500">
@@ -240,14 +233,18 @@ export default function ProjectsPage() {
               <h3 className="text-4xl font-black text-orange-500">
                 20+
               </h3>
-              <p className="text-gray-400">Years Experience</p>
+              <p className="text-gray-400">
+                Years Experience
+              </p>
             </div>
 
             <div>
               <h3 className="text-4xl font-black text-orange-500">
                 98%
               </h3>
-              <p className="text-gray-400">Client Satisfaction</p>
+              <p className="text-gray-400">
+                Client Satisfaction
+              </p>
             </div>
           </div>
         </div>
@@ -255,19 +252,19 @@ export default function ProjectsPage() {
 
       {/* FILTERS */}
       <section className="pb-12">
-        <div className="max-w-7xl mx-auto px-6 flex flex-wrap justify-center gap-3">
-          {categories.map((cat) => (
+        <div className="relative z-30 flex flex-wrap justify-center gap-4 mb-12 px-6">
+          {categories.map((category) => (
             <button
-              key={cat}
-              onClick={() => setActive(cat)}
-              className={`px-6 py-3 rounded-full transition-all duration-300
-              ${
-                active === cat
+              key={category}
+              type="button"
+              onClick={() => setActive(category)}
+              className={`px-6 py-3 rounded-full font-medium transition-all duration-300 ${
+                active === category
                   ? "bg-orange-500 text-white shadow-lg shadow-orange-500/30"
-                  : "bg-white/5 border border-white/10 text-gray-400 hover:text-white hover:border-orange-500"
+                  : "bg-white/10 text-gray-300 hover:bg-orange-500/20"
               }`}
             >
-              {cat}
+              {category}
             </button>
           ))}
         </div>
@@ -293,7 +290,7 @@ export default function ProjectsPage() {
                   overflow-hidden
                   rounded-3xl
                   border border-white/10
-                  bg-white/3
+                  bg-white/5
                   backdrop-blur-md
                   hover:border-orange-500/40
                   hover:shadow-[0_0_40px_rgba(249,115,22,0.2)]
@@ -304,22 +301,33 @@ export default function ProjectsPage() {
                     src={project.image}
                     alt={project.title}
                     className="
-                      w-full h-full object-cover
-                      transition duration-700
+                      w-full
+                      h-full
+                      object-cover
+                      transition-transform
+                      duration-700
                       group-hover:scale-110
                     "
                   />
 
-                  <div className="absolute inset-0 bg-linear-to-t from-black via-black/10 to-transparent" />
+                  <div className="absolute inset-0 bg-linear-to-t from-black via-black/20 to-transparent" />
 
                   <div
                     className="
-                      absolute top-4 right-4
-                      w-12 h-12 rounded-full
+                      absolute
+                      top-4
+                      right-4
+                      w-12
+                      h-12
+                      rounded-full
                       bg-orange-500
-                      flex items-center justify-center
-                      opacity-0 scale-75
-                      transition-all duration-300
+                      flex
+                      items-center
+                      justify-center
+                      opacity-0
+                      scale-75
+                      transition-all
+                      duration-300
                       group-hover:opacity-100
                       group-hover:scale-100
                     "
