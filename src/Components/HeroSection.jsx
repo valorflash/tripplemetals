@@ -6,8 +6,8 @@ const HERO_IMAGE =
   "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1600&q=80";
 
 const stats = [
-  { value: "20+", label: "Years Experience" },
-  { value: "500+", label: "Projects Completed" },
+  { value: "15+", label: "Years Experience" },
+  { value: "100+", label: "Projects Completed" },
   { value: "98%", label: "Client Satisfaction" },
 ];
 

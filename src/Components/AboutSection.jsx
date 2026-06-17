@@ -22,12 +22,12 @@ const highlights = [
   },
   {
     icon: Clock,
-    label: "20+ Years",
+    label: "15+ Years",
     desc: "Trusted industry experience",
   },
   {
     icon: Users,
-    label: "50+ Experts",
+    label: "20+ Experts",
     desc: "Skilled welding professionals",
   },
 ];
@@ -188,7 +188,7 @@ export default function AboutSection() {
                 "
               >
                 <h3 className="text-6xl font-black text-orange-500">
-                  20+
+                  15+
                 </h3>
 
                 <p className="text-gray-300 uppercase tracking-[3px] text-xs mt-2">

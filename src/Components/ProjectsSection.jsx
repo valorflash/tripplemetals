@@ -7,8 +7,11 @@ import gate1 from "../assets/gate-1.jpg";
 import gate3 from "../assets/gate-3.jpg";
 import gate5 from "../assets/gate-5.jpg";
 import gate6 from "../assets/gate-6.jpg";
+import gate7 from "../assets/folding-gate.jpeg";
+import gate8 from "../assets/steel-gate.jpg";
 
-import rail1 from "../assets/rail-img.jpg";
+
+import rail1 from "../assets/rail.jpg";
 import rail2 from "../assets/rail-2.jpg";
 import rail3 from "../assets/rail-3.jpg";
 import rail4 from "../assets/rail-4.jpg";
@@ -20,7 +23,7 @@ import door3 from "../assets/door-3.jpg";
 import door5 from "../assets/door-5.jpg";
 
 import tank1 from "../assets/tank-1.jpg";
-import tank2 from "../assets/tank-2.jpg";
+import tank2 from "../assets/tank-2.jpeg";
 import tank3 from "../assets/tank-3.jpg";
 import tank4 from "../assets/tank-4.jpg";
 
@@ -30,6 +33,11 @@ import welder2 from "../assets/welder-2.jpg";
 import protector from "../assets/protector-img.jpg";
 import aboutImage from "../assets/about-image.jpg";
 import carPark from "../assets/car-park.jpg";
+import park1 from "../assets/car-2.jpg"
+import park2 from "../assets/steel-6.jpg"
+import park3 from "../assets/stell-5.jpg"
+import park4 from "../assets/door-7.jpg"
+
 
 const projects = [
   {
@@ -41,6 +49,18 @@ const projects = [
   {
     image: gate3,
     title: "Luxury Entrance Gate",
+    category: "Gates",
+    desc: "Custom-designed gate with durable steel framework.",
+  },
+  {
+    image: gate7,
+    title: "Steel Folding Gate",
+    category: "Gates",
+    desc: "Custom-designed gate with durable steel framework.",
+  },
+  {
+    image: gate8,
+    title: "Steel Sliding Gate",
     category: "Gates",
     desc: "Custom-designed gate with durable steel framework.",
   },
@@ -83,13 +103,13 @@ const projects = [
   },
   {
     image: rail5,
-    title: "Industrial Rail System",
+    title: "Custom Balcony Rail",
     category: "Railings",
     desc: "Heavy-duty industrial fabrication.",
   },
   {
     image: rail6,
-    title: "Architectural Railings",
+    title: "Fence Railings",
     category: "Railings",
     desc: "Modern steel design solutions.",
   },
@@ -108,6 +128,12 @@ const projects = [
   },
   {
     image: door5,
+    title: "Industrial Door Project",
+    category: "Doors",
+    desc: "Heavy-duty steel door installation.",
+  },
+  {
+    image: park4,
     title: "Industrial Door Project",
     category: "Doors",
     desc: "Heavy-duty steel door installation.",
@@ -141,13 +167,25 @@ const projects = [
   {
     image: welder,
     title: "Precision Welding",
-    category: "Welding",
+    category: "Steel Roof",
     desc: "Professional welding workmanship.",
   },
   {
     image: welder2,
     title: "Industrial Welding",
-    category: "Welding",
+    category: "Steel Roof",
+    desc: "Certified welding operation.",
+  },
+  {
+    image: park2,
+    title: "Industrial Welding",
+    category: "Steel Roof",
+    desc: "Certified welding operation.",
+  },
+  {
+    image: park3,
+    title: "Industrial Welding",
+    category: "Steel Roof",
     desc: "Certified welding operation.",
   },
 
@@ -166,7 +204,13 @@ const projects = [
   {
     image: carPark,
     title: "Car Park Structure",
-    category: "Structural",
+    category: "Car park",
+    desc: "Large-scale structural steel work.",
+  },
+  {
+    image: park1,
+    title: "Car Park Structure",
+    category: "Car park",
     desc: "Large-scale structural steel work.",
   },
 ];
@@ -177,8 +221,8 @@ const categories = [
   "Railings",
   "Doors",
   "Tanks",
-  "Welding",
-  "Structural",
+  "Steel Roof",
+  "Car park",
   "Custom",
 ];
 
@@ -231,7 +275,7 @@ export default function ProjectsPage() {
 
             <div>
               <h3 className="text-4xl font-black text-orange-500">
-                20+
+                15+
               </h3>
               <p className="text-gray-400">
                 Years Experience

@@ -8,7 +8,7 @@ import {
 const faqs = [
   {
     q: "What types of welding services do you offer?",
-    a: "We provide MIG, TIG, Stick, and Flux-Core welding for structural, industrial, and decorative applications. Our certified welders handle carbon steel, stainless steel, aluminum, and specialty alloys.",
+    a: "We provide MIG, Stick, and Flux-Core welding for structural, industrial, and decorative applications. Our certified welders handle carbon steel, stainless steel, aluminum, and specialty alloys.",
   },
   {
     q: "Are your welders certified?",
